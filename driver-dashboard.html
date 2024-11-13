@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Driver Dashboard</h1>
+
+    <!-- Live Location Map -->
+    <div id="map">
+        <h3>Bus Live Location: </h3>
+        <p>Current Location: Main Street</p> <!-- Placeholder for live location -->
+    </div>
+
+    <!-- Delay Notification Button -->
+    <button id="delayBtn">Report Delay</button>
+
+    <!-- Attendance Form -->
+    <div>
+        <h3>Mark Attendance</h3>
+        <label>Child's Name:</label>
+        <input type="text" id="childName" placeholder="Child Name">
+        <button id="markAttendanceBtn">Mark as Present</button>
+    </div>
+
+    <script>
+        // Simulating report delay
+        document.getElementById('delayBtn').addEventListener('click', function() {
+            alert('Delay reported to Admin and Parent.');
+        });
+
+        // Mark attendance
+        document.getElementById('markAttendanceBtn').addEventListener('click', function() {
+            let childName = document.getElementById('childName').value;
+            alert(childName + ' marked as present.');
+        });
+    </script>
+</body>
+</html>
